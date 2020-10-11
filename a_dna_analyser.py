@@ -2,6 +2,8 @@ import b_dna_clenser
 import c_dna_nucleotide_frequency
 import d_dna_molecular_mass
 import e_dna_complement
+import f_dna_to_rna_translator
+import a_rna_complement
 
 def master_process():
     while True:
@@ -47,6 +49,26 @@ def master_process():
             print(f'\nThe complimentary DNA sequence is: {dna_complement_strand}')
     except:
         print("\nThere was an error creating the complimentary DNA sequence")
+
+    # calculate the RNA strand
+    try:
+        rna_strand = f_dna_to_rna_translator.f_dna_to_rna_translator(cleansed_nucleotide_sequence)
+        if rna_strand == "Error":
+            print("\nThere was an error creating the RNA sequence")
+        else:
+            print(f'\nThe RNA sequence is: {rna_strand}')
+    except:
+        print("\nThere was an error creating the RNA sequence")
+
+    # calculate the complimentary RNA strand
+    try:
+        rna_complement_strand = a_rna_complement.a_rna_complement(rna_strand)
+        if rna_complement_strand == "Error":
+            print("\nThere was an error creating the complementary RNA sequence")
+        else:
+            print(f'\nThe complementary RNA sequence is: {rna_complement_strand}')
+    except:
+        print("\nThere was an error creating the complementary RNA sequence")
 
 
 x = master_process()
