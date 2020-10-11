@@ -1,10 +1,9 @@
-from dna_nucleotide_data import *
-def d_dna_molecular_mass(nucleotide_sequence):
+def d_molecular_mass(nucleotide_sequence, molecular_mass_dict):
     molecular_mass = 0.0
     try:
         for nucleotide in nucleotide_sequence:
-            if nucleotide in dna_nucleotide_data.molecular_mass:
-                molecular_mass += dna_nucleotide_data.molecular_mass[nucleotide]
+            if nucleotide in molecular_mass_dict:
+                molecular_mass += molecular_mass_dict[nucleotide]
         return molecular_mass
     except:
         return 0
