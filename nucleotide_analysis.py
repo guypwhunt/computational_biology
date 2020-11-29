@@ -12,7 +12,7 @@ class nucleotide_analysis():
         nucleotide sequences of 
         non-nucleotide characters
         """
-        none_nucleotide_characters_removed = []
+        non_nucleotide_characters_removed = []
         dict_results = {}
         nucleotide_sequence = self.nucleotide_sequence
         nucleotide_list = self.nucleotide_list
@@ -21,9 +21,9 @@ class nucleotide_analysis():
             for character in nucleotide_sequence:
                 if character not in nucleotide_list:
                     nucleotide_sequence = nucleotide_sequence.replace(character,"")
-                    none_nucleotide_characters_removed.append(character)
+                    non_nucleotide_characters_removed.append(character)
             dict_results["cleansed_nucleotide_sequence"] = nucleotide_sequence
-            dict_results["none_nucleotide_characters_removed"] = none_nucleotide_characters_removed
+            dict_results["non_nucleotide_characters_removed"] = non_nucleotide_characters_removed
             self.nucleotide_sequence = nucleotide_sequence
             return(dict_results)
         except:

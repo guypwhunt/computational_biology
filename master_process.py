@@ -16,10 +16,10 @@ def master_process():
             print("There was an error entering your nucleotide sequence please try again.")
             break
     print("DNA Information")
-    print(dna.sequence_cleanser())
-    print(dna.nucleotide_frequency())
-    print(dna.molecular_mass())
-    print(dna.complement())
+    print(f'Cleansed Nucleotide Sequence: {dna.sequence_cleanser()}')
+    print(f'Nucleotide Frequency: {dna.nucleotide_frequency()}')
+    print(f'Nucleotide Sequence Molecular Mass: {dna.molecular_mass()}')
+    print(f'Complementary Nucleotide Sequence: {dna.complement()}')
 
     # Complementary DNA Analysis
     while True:
@@ -33,10 +33,10 @@ def master_process():
             print("There was an error entering your nucleotide sequence please try again.")
             break
     print("\n Complementary DNA Information")
-    print(complimentary_dna.sequence_cleanser())
-    print(complimentary_dna.nucleotide_frequency())
-    print(complimentary_dna.molecular_mass())
-    print(complimentary_dna.complement())
+    print(f'Cleansed Nucleotide Sequence: {complimentary_dna.sequence_cleanser()}')
+    print(f'Nucleotide Frequency: {complimentary_dna.nucleotide_frequency()}')
+    print(f'Nucleotide Sequence Molecular Mass: {complimentary_dna.molecular_mass()}')
+    print(f'Complementary Nucleotide Sequence: {complimentary_dna.complement()}')
 
     # DNA to RNA Conversion
     while True:
@@ -50,8 +50,10 @@ def master_process():
             print("There was an error entering your nucleotide sequence please try again.")
             break
     print("\nRNA Information")
-    print(rna_conversion.sequence_cleanser())
-    print(rna_conversion.complement())
+    print(f'Cleansed DNA Nucleotide Sequence: {rna_conversion.sequence_cleanser()}')
+    print(f'Complementary RNA Nucleotide Sequence: {rna_conversion.complement()}')
+
+    
 
     # RNA Analysis
     while True:
@@ -65,10 +67,10 @@ def master_process():
             print("There was an error entering your nucleotide sequence please try again.")
             break
     print("\n RNA Analysis")
-    print(rna.sequence_cleanser())
-    print(rna.nucleotide_frequency())
-    print(rna.molecular_mass())
-    print(rna.complement())
+    print(f'Cleansed Nucleotide Sequence: {rna.sequence_cleanser()}')
+    print(f'Nucleotide Frequency: {rna.nucleotide_frequency()}')
+    print(f'Nucleotide Sequence Molecular Mass: {rna.molecular_mass()}')
+    print(f'Complementary Nucleotide Sequence: {rna.complement()}')
 
     # Complementary RNA Analysis
     while True:
@@ -82,10 +84,10 @@ def master_process():
             print("There was an error entering your nucleotide sequence please try again.")
             break
     print("\n Complementary RNA Analysis")
-    print(rna.sequence_cleanser())
-    print(rna.nucleotide_frequency())
-    print(rna.molecular_mass())
-    print(rna.complement())
+    print(f'Cleansed Nucleotide Sequence: {rna.sequence_cleanser()}')
+    print(f'Nucleotide Frequency: {rna.nucleotide_frequency()}')
+    print(f'Nucleotide Sequence Molecular Mass: {rna.molecular_mass()}')
+    print(f'Complementary Nucleotide Sequence: {rna.complement()}')
 
 x = master_process()
 
