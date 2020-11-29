@@ -1,3 +1,6 @@
+# UPDATE TO USE __repr__ to return machine readable formats
+
+
 class nucleotide_analysis():
     def __init__(self, nucleotide_sequence, nucleotide_list, molecular_mass_dict, complimentary_base_pairs):
         self.nucleotide_sequence = nucleotide_sequence
